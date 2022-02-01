@@ -3,7 +3,7 @@ const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset');
 const cellDivs = document.querySelectorAll('.game-cell');
 
-//game constants
+//Tic Tac Toe Symbols
 const xSymbol = '✖';
 const oSymbol ='○';
 // game variables
@@ -15,6 +15,7 @@ let xIsNext = true;
 let winner = null;
 
 //functions
+// Convert X and O to tic tac toe symbols
 const letterToSymbol = function(letter){
     if (letter === 'x'){
         return xSymbol;  
